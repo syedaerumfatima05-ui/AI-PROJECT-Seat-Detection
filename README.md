@@ -27,6 +27,7 @@ Google Colab (for training and experimentation)
 A custom dataset was created for this project, consisting of images captured in various campus environments under different lighting conditions and angles. Each image was annotated with bounding boxes and labeled into two classes:
 - Available Seat
 - Occupied Seat
+  
 The dataset ensures diversity and adheres to ethical guidelines by avoiding identifiable faces and personal data.
 
 **Key Features**
