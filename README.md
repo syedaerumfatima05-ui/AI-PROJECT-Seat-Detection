@@ -56,18 +56,18 @@ The YOLOv8 object detection algorithm was selected as the core model due to its 
 - Key Findings:
 Several important findings emerged from this project:
 
-# First, YOLOv8 proved to be an excellent choice for this use case. Despite the computational demands (9 hours of training), the resulting model demonstrates strong detection capabilities that would support real-time inference in a production environment. The trade-off between training time and inference speed is justified for this application.
+. First, YOLOv8 proved to be an excellent choice for this use case. Despite the computational demands (9 hours of training), the resulting model demonstrates strong detection capabilities that would support real-time inference in a production environment. The trade-off between training time and inference speed is justified for this application.
 
-# Second, dataset quality directly impacts model performance. By collecting 600 diverse images with balanced class representation (300 available, 300 occupied), the model received adequate exposure to both states under various conditions. The inclusion of multiple lighting conditions and angles helped the model generalize beyond the specific training examples.
+. Second, dataset quality directly impacts model performance. By collecting 600 diverse images with balanced class representation (300 available, 300 occupied), the model received adequate exposure to both states under various conditions. The inclusion of multiple lighting conditions and angles helped the model generalize beyond the specific training examples.
 
-# Third, manual annotation using Roboflow, while time-consuming, ensured high-quality bounding boxes. Consistent annotation practices across all 600 images provided the model with reliable ground truth data, which is essential for effective learning.
+. Third, manual annotation using Roboflow, while time-consuming, ensured high-quality bounding boxes. Consistent annotation practices across all 600 images provided the model with reliable ground truth data, which is essential for effective learning.
 
 -Limitations:
 Despite the project's success, several limitations were identified:
 
-# Training duration	9 hours of training time limits rapid iteration and hyperparameter tuning.
-# Fixed camera angles	The model assumes consistent camera perspectives across deployment.
-# Lighting dependency	Extreme lighting conditions (very dark, very bright) may reduce accuracy.
-# Limited seat types	The dataset represents specific campus seating; new furniture may require additional training.
+. Training duration	9 hours of training time limits rapid iteration and hyperparameter tuning.
+. Fixed camera angles	The model assumes consistent camera perspectives across deployment.
+. Lighting dependency	Extreme lighting conditions (very dark, very bright) may reduce accuracy.
+. Limited seat types	The dataset represents specific campus seating; new furniture may require additional training.
 
 This project successfully applied modern machine learning and computer vision techniques to solve a tangible campus problem. A complete end-to-end AI pipeline was built, from custom dataset collection and annotation (600 images, 300 per class) to model training using YOLOv8 (9 hours on Google Colab) and final evaluation with bounding box visualization and confidence scoring.
